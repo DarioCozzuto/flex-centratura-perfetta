@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="IT">
+<title>flex centratura-perfetta</title>
+<style>
+    /* la modalità di display predefinità è block, ovvero una sotto l'altra*/
+    body {
+        background-color: grey;
+    }
+
+    /* applico lo stile al figlio=div del genitore=container tramite questa dicitura*/
+    #container div {
+       background-color: red;
+       margin: 50px;
+       padding: 10px;
+       width: 200px;
+    }
+
+    #container {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center; /*centro orizzontalmente*/
+        align-items: center;  /*centro verticalmente*/
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div id="container">
+        <div>
+            <img src="1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html> 
